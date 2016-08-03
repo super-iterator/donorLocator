@@ -31,7 +31,7 @@ export function set_latlng(map) {
             Session.set('latlng',{lat,lng} )
 
 
-            L.Icon.Default.imagePath = '/images/'
+            L.Icon.Default.imagePath = '/images'
 
 
             //// Adding a marker in that location -- both work
