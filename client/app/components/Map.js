@@ -282,7 +282,7 @@ export class patientMap extends React.Component{
                 },
                 // call the function after some time so
                 // React/Redux components get initizlized
-                1000
+                2000
             )
         )
     }
