@@ -246,16 +246,14 @@ export class patientMap extends React.Component{
 
         var map = L.map(this.refs.mapRef).setView([31.528, 30.680], 2)
 
-        L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" , {
-            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-            maxZoom: 18,
-        }).addTo(map);
+        // L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" , {
+        //     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        //     maxZoom: 18,
+        // }).addTo(map);
 
 
-        // L.esri.basemapLayer("Streets").addTo(map);
-        //
-        // console.log("ESRI::",L.esri);
-        //
+        esri.basemapLayer("Streets").addTo(map)
+
         // var parks = L.esri.featureLayer({
         //     url: "https://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Portland_Parks/FeatureServer/0",
         //     style: function() {
@@ -414,10 +412,10 @@ export class donorUpdate extends React.Component{
         }).addTo(map);
 
 
-        // L.esri.basemapLayer("Streets").addTo(map);
-        //
-        // console.log("ESRI::",L.esri);
-        //
+
+
+        esri.basemapLayer("Streets").addTo(map)
+
         // var parks = L.esri.featureLayer({
         //     url: "https://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Portland_Parks/FeatureServer/0",
         //     style: function() {
