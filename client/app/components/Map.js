@@ -115,7 +115,7 @@ export class donorMap extends React.Component{
             if(!Session.get('errors')){
                 $("#donorCreateSuccess").modal('show')
             }
-        }, 500))
+        }, 1000))
 
 
     }
@@ -282,7 +282,7 @@ export class patientMap extends React.Component{
                 },
                 // call the function after some time so
                 // React/Redux components get initizlized
-                300
+                1000
             )
         )
     }
@@ -294,7 +294,7 @@ export class patientMap extends React.Component{
 
             var map = this.props.map
 
-            L.Icon.Default.imagePath = '/images/'
+            L.Icon.Default.imagePath = '/images'
 
             var marker = L.marker([donor.lat, donor.lng], {title: "Click to show"}).addTo(map);
 
@@ -477,7 +477,7 @@ export class donorUpdate extends React.Component{
             if(!Session.get('errors')){
                 $("#updateSuccessModal").modal('show')
             }
-        }, 200))
+        }, 1000))
 
 
 
