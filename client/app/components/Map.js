@@ -139,7 +139,7 @@ export class donorMap extends React.Component{
 
     render(){
         return(
-            <div>
+            <div style={{textAlign:"center"}}>
                 <h1>{this.props.location.pathname == "/" ? "Patients Map" : "Donors Map"}</h1>
 
                 <div id='map' ref="mapRef" style={{height: "480px"}}></div>
@@ -349,7 +349,7 @@ export class patientMap extends React.Component{
 
     render(){
         return(
-            <div>
+            <div style={{textAlign:"center"}}>
 
                 <div class="input-group col-xs-3 center-block">
                     <input type="text" class="form-control" placeholder="Find Blood Groups" onChange={ this.searchUpdated.bind(this) } />
@@ -503,7 +503,7 @@ export class donorUpdate extends React.Component{
 
     render(){
         return(
-            <div>
+            <div style={{textAlign:"center"}}>
 
                 <h1>Donor Info Update</h1>
 

@@ -40,7 +40,7 @@ class Main extends React.Component {
     render(){
         return(
 
-            <div style={{textAlign:"center"}} >
+            <div>
 
                 <nav class="navbar navbar-default" role="navigation">
                     <div class="container-fluid">

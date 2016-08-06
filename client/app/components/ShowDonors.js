@@ -12,7 +12,7 @@ class ShowDonors extends React.Component {
 
     render(){
         return(
-            <div>
+            <div style={{textAlign:"center"}}>
 
                 <table class="table table-striped table-bordered">
                     <thead>
