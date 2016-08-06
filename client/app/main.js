@@ -32,7 +32,7 @@ Meteor.startup(()=>{
                         <IndexRoute component={patientMap} />
                         <Route path="/donors" component={donorMap} />
                         <Route path="/update(/:id)" component={donorUpdate} />
-                        <Route path="/about" component={Settings} />
+                        <Route path="/about" component={About} />
                         <Route path="/show" component={ShowDonors} />
 
                     </Route>
