@@ -18,7 +18,7 @@ import { patientMap ,
          donorUpdate }            from './components/Map'
 
 import HomePage                   from './components/HomePage'
-import Settings                   from './components/Settings'
+import About                      from './components/About'
 
 import ShowDonors                 from './components/ShowDonors'
 
